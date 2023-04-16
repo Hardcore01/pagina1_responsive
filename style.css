@@ -5,10 +5,32 @@
 }
 .container{
     width: 96%;
+    height: 100%;
     margin: 20px auto;
     display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);  
+}
+.card__daniel{
+    grid-column: span 2;
+    background-color:hsl(263, 55%, 52%)
+}
+.card__jonathan{
+    grid-column: span 1;
+    background-color:  hsl(217, 19%, 35%);
+}
+.card__kira{
+    grid-column: 4;
+    grid-row-start: -3;
+    grid-row-end: -1;
+    background-color: hsl(0, 0%, 100%);
+}
+.card__jeanette{
+    grid-column: 1;
+    background-color: hsl(0, 0%, 100%);
+}
+.card__patrick{
+    grid-column: span 2;
+    background-color: hsl(219, 29%, 14%);
 }
